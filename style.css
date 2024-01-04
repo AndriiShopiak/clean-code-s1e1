@@ -58,8 +58,7 @@ button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.main__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -68,7 +67,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+#input-task, #new-task, .main__edit-field {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,22 +78,23 @@ input[type="text"] {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  flex-grow: 1;
 }
-input[type="text"]:focus {
+#input-task:focus, #new-task:focus, .main__edit-field:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+#create-new-task {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.main__list, .main__edit-mode, .main__list-completed {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -103,20 +103,20 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.main__list, .main__edit-mode, .main__list-completed > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.main__checkbox-btn {
   margin: 0 10px;
 }
-li > label {
+#paste-text {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+#input-task {
   width: 226px
 }
 .main__delete-btn img {
@@ -129,21 +129,21 @@ li > input[type="text"] {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#paste-text {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+#input-task {
   display:none
 }
 
-ul li.main__edit-mode input[type=text] {
+.main__edit-mode #input-task {
   display:inline-block;
   width:224px
 }
 
-ul li.main__edit-mode label {
+.main__edit-mode .main__task-adding-input {
   display:none;
 }

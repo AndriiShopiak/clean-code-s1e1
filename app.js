@@ -18,13 +18,17 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList = "main__list-completed";
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.classList = "main__checkbox-btn";
     //label
     var label=document.createElement("label");//label
+    label.id = "paste-text";
     //input (text)
     var editInput=document.createElement("input");//text
+    editInput.id = "input-task";
     //button.edit
     var editButton=document.createElement("button");//edit button
 
@@ -38,7 +42,7 @@ var createNewTaskElement=function(taskString){
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="main__task-adding-input";
+    editInput.className="main__task-adding-input main__edit-field";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="main__edit-btn";
@@ -79,7 +83,6 @@ var editTask=function(){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
-
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector('input[type=text]');
@@ -99,6 +102,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
+    listItem.classList.toggle("main__list-completed");
     listItem.classList.toggle("main__edit-mode");
 };
 

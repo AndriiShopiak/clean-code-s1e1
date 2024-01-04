@@ -12,7 +12,7 @@
       </div>
       <div class="main__block">
         <p class="main__adding">
-          <label for="new-task" class="main__title">Add Item</label>
+          <label for="new-task" class="main__title" id="create-new-task">Add Item</label>
           <div class="main__task-wrapper">
             <input 
               id="new-task"
@@ -25,8 +25,8 @@
         <ul class="main__complete-list">
           <li class="main__list">
             <input type="checkbox" class="main__checkbox-btn">
-            <label class="main__task-adding-input">Pay Bills</label>
-            <input type="text" class="main__task-adding-input">
+            <label class="main__task-adding-input" id="paste-text">Pay Bills</label>
+            <input type="text" class="main__task-adding-input" id="input-task">
             <button class="main__edit-btn">Edit</button>
             <button class="main__delete-btn">
               <img src="./remove.svg" class="main__img">
@@ -34,8 +34,8 @@
           </li>
           <li class="main__edit-mode">
             <input type="checkbox" class="main__checkbox-btn">
-            <label class="main__task-adding-input">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="main__task-adding-input">
+            <label class="main__task-adding-input" id="paste-text">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="main__task-adding-input" id="input-task">
             <button class="main__edit-btn">Save</button>
             <button class="main__delete-btn">
               <img src="./remove.svg" class="main__img">
@@ -46,8 +46,8 @@
           <ul id="completed-tasks">
             <li class="main__list-completed">
               <input type="checkbox" class="main__checkbox-btn" checked>
-              <label class="main__task-adding-input">See the Doctor</label>
-              <input type="text" class="main__task-completed">
+              <label class="main__task-adding-input" id="paste-text">See the Doctor</label>
+              <input type="text" class="main__task-completed" id="input-task">
               <button class="main__edit-btn">Edit</button>
               <button class="main__delete-btn">
                 <img src="./remove.svg" class="main__img">
