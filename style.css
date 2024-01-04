@@ -39,7 +39,8 @@ ul {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+li,
+h3 {
   list-style: none;
 }
 input,button{
@@ -67,7 +68,9 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-#input-task, #new-task, .main__edit-field {
+#input-task,
+#new-task,
+.main__edit-field {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,7 +83,9 @@ button:hover {
   color: #888;
   flex-grow: 1;
 }
-#input-task:focus, #new-task:focus, .main__edit-field:focus {
+#input-task:focus,
+#new-task:focus,
+.main__edit-field:focus {
   color: #333;
 }
 
@@ -94,7 +99,9 @@ button:hover {
 }
 
 /* Task list */
-.main__list, .main__edit-mode, .main__list-completed {
+.main__list,
+.main__edit-mode,
+.main__list-completed {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -103,7 +110,9 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
-.main__list, .main__edit-mode, .main__list-completed > * {
+.main__list,
+.main__edit-mode,
+.main__list-completed > * {
   vertical-align: middle;
 }
 
