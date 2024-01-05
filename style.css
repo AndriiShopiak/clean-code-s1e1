@@ -138,7 +138,7 @@ button:hover {
 }
 
 /* Completed */
-#paste-text {
+#completed-tasks #paste-text {
   text-decoration: line-through;
   color: #888;
 }
